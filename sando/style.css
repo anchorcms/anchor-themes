@@ -1,0 +1,94 @@
+/* Sando Stylesheet */
+
+* { margin: 0; padding: 0; outline: 0; }
+body { background: #353535 url(images/fbg.png); font-family: Arial, Helvetica, sans-serif; color: #838383; }
+ul, ol { list-style: none; }
+.wrapper, #posts, article, #page-nav { width: 712px; margin: 0 auto; }
+.not_found.wrapper { padding: 30px 0 50px; }
+
+a { color: #ae3949; text-decoration: underline; }
+a:hover { color: inherit; }
+
+footer a { color: #fff; }
+footer a:hover { color: inherit; }
+
+/*=================================================================
+Typography
+=================================================================*/
+
+h1, h2, h3 { font-weight: bold; color: #525252; }
+article h1, article h2, article h3 { margin-top: 30px; }
+h1.wrapper { padding-top: 30px; }
+h1 a, h2 a, h3 a { color: #525252; text-decoration: none; }
+h1 a:hover, h2 a:hover, h3 a:hover { color: #ae3949; }
+h1 { font-size: 1.5em; }
+h2 { font-size: 1.3em; }
+h3 { font-size: 1.1em; }
+h2#postTitle { font-size: 1.7em; margin-top: 0; }
+
+p { font-size: 1em; line-height: 25px; margin-top: 20px; }
+#posts p { margin-top: 0; }
+footer p { margin-top: 0; font-size: 0.8em; line-height: 24px; color: #b9b9b9; text-shadow: 1px 1px 0px #151515; }
+.postMeta, .postFooter { font-family: Georgia, "Times New Roman", Times, serif; font-style: italic; font-size: 1em; margin-top: 0; color: #b0b0b0; }
+.postFooter { margin-top: 20px; }
+.postMeta span { color: #d0d0d0; padding: 0 10px; }
+
+/*=================================================================
+Header Styling
+=================================================================*/
+
+header { background: url(images/hbg.png) repeat-x; height: 86px; }
+header .wrapper { overflow: visible; position: relative; height: 86px; }
+
+#logo { background: url(images/h_separator.png) no-repeat right; padding: 27px 27px 28px 0; position: absolute; left: -109px; }
+#logo a { width: 83px; height: 30px; display: block; text-indent: -100000px; background: url(images/logo.png) no-repeat; }
+
+nav ul { padding-left: 35px; }
+nav ul li { float: left; font-size: 0.8em; padding: 35px 0 35px 0; margin-right: 30px; }
+nav ul li a { color: #a49d5f; text-decoration: none; text-shadow: 1px 1px 0px #fcf9dd; }
+nav ul li a:hover, nav ul li.current a { color: #46432d; }
+nav ul li.current { background: url(images/active_state.png) no-repeat bottom center; }
+
+.search input { position: relative; top: 22px; float: right; font-size: 0.8em; color: #a9a9a9; background: #fff url(images/magnifier.png) no-repeat 203px 7px; padding: 8px  36px 8px 16px; width: 182px; border-radius: 30px; border: 3px solid #e9e191; outline: 0; }
+.search input:focus { border-color: #ccc57d; }
+
+/*=================================================================
+Content Styling
+=================================================================*/
+
+#content { background: #fff url(images/cbg.png) top repeat-x; }
+
+#posts li { position: relative; padding: 40px 0; background: url(images/divider.png) bottom no-repeat; opacity: 0.6; }
+#posts li:hover{ opacity: 1; }
+
+article { padding: 40px 0; }
+article ul { margin-top: 30px; border-left: 1px solid #cfcfcf; padding-right: 60px; }
+article ul li { font-size: 1em; line-height: 25px; margin-top: 15px; padding-left: 30px; background: url(images/bullet.png) no-repeat 0 11px; }
+
+.edit { position: absolute; left: -56px; padding: 10px 27px 10px 0; }
+.edit a { width: 29px; height: 29px; display: block; text-indent: -100000px; background: url(images/edit_20.png) no-repeat 0 0; }
+.edit a:hover { background-position: 0 -29px; }
+
+#posts li .edit { opacity: 0; }
+#posts li:hover .edit { opacity: 1; }
+
+.date { position: absolute; left: 659px; width: 33px; height: 32px; padding: 14px 10px 10px 10px; background: url(images/date.png) no-repeat; font-size: 0.8em; color: #9c8160; text-shadow: 1px 1px 0px #fbf3ea; text-align: center; line-height: 12px; }
+.date span { font-weight: bold; }
+
+#page-nav { padding: 40px; }
+.older, .newer { height: 41px; text-indent: -100000px; display: block; }
+.older { float: right; background: url(images/older.png) no-repeat 0 0; width: 108px; }
+.newer { background: url(images/newer.png) no-repeat 0 0; width: 116px; }
+.newer:hover, .older:hover { background-position: 0 -41px; }
+
+article img { background: #fff; border: 1px solid #e0e0e0; padding: 5px; margin-top: 30px; }
+
+blockquote { background: #f0f0f0; padding: 30px; font-style: italic; line-height: 24px; margin-top: 30px; border-radius: 6px; box-shadow: 1px 1px 0px #e0e0e0; }
+
+/*=================================================================
+Footer Styling
+=================================================================*/
+
+footer { padding: 40px 0; border-top: 1px solid #151515; }
+#anchor_logo { float: right; margin-top: 15px; width: 25px; height: 23px; display: block; text-indent: -100000px; background: url(images/anchor_logo.png) no-repeat 0 0; }
+#anchor_logo:hover { background-position: 0 -23px; }
