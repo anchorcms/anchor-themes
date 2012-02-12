@@ -1,0 +1,5 @@
+Theme name:    Prototype
+Description:   Simple theme with grungy feel.
+Author name:   Cosmin Negoita
+Author site:   http://incidiolabs.com
+License:       WTFPL (http://sam.zoy.org/wtfpl/COPYING)

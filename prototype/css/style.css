@@ -1,0 +1,38 @@
+/*=============================================
+
+Prototype Stylesheet
+Theme by Cosmin Negoita
+URL: incidiolabs.com
+
+==============================================*/
+
+@import url('reset.css');
+@import url('type.css');
+
+body { background: #000; font-family: 'Droid Serif', serif; color: #4f4f4f; }
+
+/*=============================================
+Grid Settings
+=============================================*/
+
+.wrapper { width: 825px; margin: 0 auto; overflow: hidden; clear: both; }
+.wrapper .col_1, .wrapper .col_2, .wrapper .col_3 { float: left; margin: 0 25px; }
+.wrapper .col_1 { width: 225px; }
+.wrapper .col_2 { width: 500px; }
+.wrapper .col_3 { width: 775px; }
+
+/*=============================================
+Layout Options
+=============================================*/
+
+header { padding: 15px 0; }
+
+#content { background: #fff url(../img/bg.png); }
+#content .wrapper { background: url(../img/wbg.png) center repeat-y; padding: 50px 0; }
+
+#posts { background: url(../img/abb.png) bottom no-repeat; }
+article { margin-bottom: 50px; }
+
+#sidebar .box { margin-bottom: 50px; }
+
+footer { padding: 20px; }

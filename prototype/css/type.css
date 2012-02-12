@@ -1,0 +1,61 @@
+/*=============================================
+
+Prototype Typography
+Theme by Cosmin Negoita
+URL: incidiolabs.com
+
+==============================================*/
+
+a { color: #ae3949; text-decoration: underline; }
+a:hover { color: #00938b; }
+
+footer a { color: #fff; }
+footer a:hover { color: inherit; }
+
+h1, h2, h3 { font-weight: normal; margin-top: 25px; color: #000; }
+h1 { font-size: 1.9em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.3em; }
+
+h1 a, h2 a, h3 a { text-decoration: none; }
+
+p { font-size: 1em; line-height: 25px; margin-top: 25px; }
+.meta { margin-top: 0; color: #a9a9a9; font-style: italic; font-size: 0.9em; }
+footer p { margin-top: 0; font-size: 0.8em; line-height: 20px; color: #a0a0a0; }
+
+
+nav { float: right; }
+nav ul li { float: left; font-size: 0.9em; margin-left: 30px; }
+nav ul li a { color: #aaa; text-decoration: none; }
+nav ul li a:hover, nav ul li.active a { color: #fff; }
+
+#content ul, #content ol { margin-top: 25px; }
+#content ul li, #content ol li { font-size: 0.8em; line-height: 25px; margin-bottom: 10px; }
+#content ul li:before { content: '→'; padding-right: 10px; }
+#content ul li a { color: #000; }
+#content ul li a:hover { color: #ae3949; }
+#content ul li:hover:before { color: #ae3949; }
+
+.noTop { margin-top: 0; }
+
+#logo { margin-top: 0; font-size: 1em; font-weight: bold; }
+#logo a { color: #fff; text-decoration: none; }
+#logo a:hover { color: #00938b; }
+
+.button { background: #000; color: #fff; text-decoration: none; display: inline-block; padding: 10px; font-size: 0.8em; margin-top: 30px; }
+.button:hover { color: #ae3949; }
+
+.compact { background: url(../img/abb.png) no-repeat top; margin-bottom: 0; }
+.compact h2 { font-size: 1em; margin-top: 0; }
+.compact a { display: block; padding: 15px 0; color: #000; text-decoration: none; }
+.compact a span { margin-right: 20px; color: #a9a9a9; text-transform: uppercase; font-size: 0.9em; display: inline-block; }
+.compact a:hover { color: #ae3949; }
+.compact a:hover:after { content: '→'; padding-left: 10px; }
+
+.search { margin-bottom: 50px; }
+.search input { width: 203px; font-size: 0.8em; color: #757575; background: #f5f5f5; padding: 10px; border: 1px solid #d5d5d5; outline: 0; }
+
+#anchorLogo { float: right; opacity: 0.6; }
+#anchorLogo:hover { opacity: 1; }
+
+#content img { background: #f5f5f5; padding: 4px; border: 1px solid #d1d1d1; margin-top: 25px; }
