@@ -233,6 +233,12 @@ section.content{
 	padding: 10px;
 }
 
+section.content a{
+	color: #555;
+	font: lighter 1em  'Helvetica Neue', 'Verdana', Arial,  sans-serif;
+	text-decoration: underline;
+}
+
 section.content p{
 	color: #666;
 	font: lighter 1em  'Helvetica Neue', 'Verdana', Arial,  sans-serif;
@@ -271,6 +277,73 @@ section.footnote{
 	font:  0.8em  'Helvetica Nueue', 'Verdana', Calibri, Arial,  sans-serif;
 	color:#666;
 	padding: 10px;
+}
+
+section.comments h1{
+	color: #444;
+	font: lighter 1.2em 'Century Gothic', 'Helvetica Neue', Arial,  sans-serif;
+	margin-bottom: 20px;
+}
+
+section.comments a{
+	color: #444;
+	font: lighter 1em 'Century Gothic', 'Helvetica Neue', Arial,  sans-serif;
+}
+
+section.comments p{
+	color: #444;
+	font: lighter 1em 'Century Gothic', 'Helvetica Neue', Arial,  sans-serif;
+	margin-bottom: 15px;
+}
+
+section.comments p em{
+	font-size: 0.8em;
+	color: #666;
+	margin-left: 15px;
+}
+
+section.comments input{
+	height: 20px;
+	width: 50%;
+	padding: 8px 12px;
+	color: #333;
+	border: none;
+	font: lighter 0.8em 'Century Gothic', 'Helvetica Neue', Arial,  sans-serif;
+	border: 1px solid #ddd;
+}
+
+section.comments textarea{
+	height: 100px;
+	width: 50%;
+	padding: 8px 12px;
+	color: #333;
+	border: none;
+	font: lighter 0.8em 'Century Gothic', 'Helvetica Neue', Arial,  sans-serif;
+	resize:vertical;
+	border: 1px solid #ddd;
+}
+
+section.comments legend{
+	color: #222;
+	font: lighter 1em 'Century Gothic', 'Helvetica Neue', Arial,  sans-serif;
+	margin-bottom: 10px;
+}
+
+section.comments button{
+	height: 40px;
+	width: 120px;
+	border: 1px solid #ccc;
+	background: #ddd;
+	font: lighter 0.8em 'Century Gothic', 'Helvetica Neue', Arial,  sans-serif;
+}
+
+section.comments button:hover{
+	cursor: pointer;
+	background: #eaeaea;
+}
+
+section.comments button:active{
+	background: #dadada;
 }
 
 /* Our @media queries to make it nice and responsive at all resolutions. */
@@ -348,6 +421,14 @@ section.footnote{
 	.footer_wrap{
 		max-width: 500px;
 	}
+	
+	section.comments input{
+		width: 95%;
+	}
+	
+	section.comments textarea{
+		width: 95%;
+	}
 }
 
 @media screen and (max-width: 480px){
@@ -389,6 +470,14 @@ section.footnote{
 	footer#bottom a#attribution{
 		float:left;
 	}
+	
+	section.comments input{
+		width: 95%;
+	}
+	
+	section.comments textarea{
+		width: 95%;
+	}
 
 }
 
@@ -428,6 +517,14 @@ section.footnote{
 	footer#bottom a#attribution{
 		float:left;
 	}
+	
+	section.comments input{
+		width: 95%;
+	}
+	
+	section.comments textarea{
+		width: 95%;
+	}
 }
 
 @media screen and (max-width: 240px){
@@ -465,6 +562,14 @@ section.footnote{
 	}
 	footer#bottom a#attribution{
 		float:left;
+	}
+	
+	section.comments input{
+		width: 95%;
+	}
+	
+	section.comments textarea{
+		width: 95%;
 	}
 
 }
