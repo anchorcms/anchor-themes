@@ -346,6 +346,53 @@ section.comments button:active{
 	background: #dadada;
 }
 
+section.comments a{
+	color: #555;
+	font: lighter 1em  'Helvetica Neue', 'Verdana', Arial,  sans-serif;
+	text-decoration: underline;
+}
+
+section.comments .content{
+	color: #444;
+	font: lighter 0.9em  'Helvetica Neue', 'Verdana', Arial,  sans-serif;
+	line-height: 1.3em;
+	margin-top: 10px;
+}
+
+section.comments h2{
+	color: #444;
+	font: lighter 1.2em 'Century Gothic', 'Helvetica Neue', Arial,  sans-serif;
+	margin-bottom: 10px;
+}
+
+section.comments ul{
+	list-style: none;
+	margin-bottom: 15px;	
+}
+
+section.comments ul li{
+	margin-bottom: 15px;
+	list-style: none;
+	font:  1em  'Helvetica Nueue', 'Verdana', Calibri, Arial,  sans-serif;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 15px;
+	background: #eaeaea;
+	padding: 10px;
+
+}
+
+section.comments ul li a{
+	text-decoration: none;
+	margin-top: 15px;
+	color:#666;
+}
+
+section.comments ul li time{
+	color:#888;
+	font-size: 0.8em;
+}
+
 /* Our @media queries to make it nice and responsive at all resolutions. */
 
 @media screen and (max-width: 1024px){
