@@ -7,17 +7,6 @@
 	collisions or wrap your functions with if function_exists braces.
 */
 
-function my_last_tweet(){
-	$json = file_get_contents("https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=". twitter_account() ."&count=4"); 
-	$decode = json_decode($json, true);
-	$tweets = '';
-	for($i = 0; $i < count($decode); $i++){
-		$tweets .= '<p>"' . $decode[$i]['text']  . '"</p><em>' . substr($decode[$i]['created_at'], 4, 7) .'' . substr($decode[$i]['created_at'],-4) . '</em><br>';
-	}
-	
-	return $tweets;
-}
-
 function numeral($number) {
 	$test = abs($number) % 10;
 	$ext = ((abs($number) % 100 < 21 and abs($number) % 100 > 4) ? 'th' : (($test < 4) ? ($test < 3) ? ($test < 2) ? ($test < 1) ? 'th' : 'st' : 'nd' : 'rd' : 'th'));
@@ -58,3 +47,12 @@ function relative_time($date) {
         }
     }
 }
+
+
+/**
+ *	 Binding custom functions
+ *	 This is just an example of what can be done
+ */
+bind('about', function() {
+	return 'about page';
+});

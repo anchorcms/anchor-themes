@@ -16,9 +16,28 @@
 			</li>
 			<?php endwhile; ?>
 		</ul>
+		<div class="search_wrap">
+			<form id="search" action="<?php echo search_url(); ?>" method="post">
+				<input type="search" name="term" placeholder="To search, type and hit enter&hellip;" value="<?php echo search_term(); ?>">
+			</form>
+		</div>
+		<div class="feed_wrap">
+			<h3>Topics:</h3>
+			<p class="topic"><a href="../search/programming">Programming</a> - Posts teaching and advising programming techniques, bringing you the latest information and news to keep you up to date with your favourite languages.</p>
+			<p class="topic"><a href="../search/internet">The Internet</a> - Primarily random posts with no category, else they involve a specific feature of the internet, possibly something I have found.</p>
+			<p class="topic"><a href="../search/anchor">Anchor</a> - Posts in this topic are about Anchor, the free; open-source blogging CMS developed by an ever growing community.</p>
+		</div>
 		<?php else: ?>
 			<p>Unfortunately, there's no results for &ldquo;<?php echo search_term(); ?>&rdquo;. Did you spell everything correctly?</p>
+			<div class="search_wrap_large">
+				<form id="search" action="<?php echo search_url(); ?>" method="post">
+					<input type="search" name="term" placeholder="To search, type and hit enter&hellip;" value="<?php echo search_term(); ?>">
+				</form>
+			</div>
 		<?php endif; ?>
 		
+		
+		
 	</section>
+	
 </div>

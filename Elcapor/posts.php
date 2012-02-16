@@ -22,7 +22,7 @@
 		</div>
 		<div class="feed_wrap"><h3>Twitter feed:</h3>
 		<?php 
-			if(function_exists(my_last_tweet())){
+			if(function_exists('my_last_tweet')){
 				echo ''. my_last_tweet() .'';
 			}else{
 				echo '<p>Unfortunately there was a problem getting the latest tweets for this user.</p>';

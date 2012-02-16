@@ -17,18 +17,20 @@
 /* Body stuff */
 body{
 	background: #efefef;
+	font:  1em  'Helvetica Neue', 'Verdana', Calibri, Arial,  sans-serif;
 }
 
 /* Header & nav Styling */
 header#top{
-	background: #e6e456; /* Old browsers */
-	background: -moz-linear-gradient(top,  #e6e456 0%, #d3d651 100%); /* FF3.6+ */
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e6e456), color-stop(100%,#d3d651)); /* Chrome,Safari4+ */
-	background: -webkit-linear-gradient(top,  #e6e456 0%,#d3d651 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-linear-gradient(top,  #e6e456 0%,#d3d651 100%); /* Opera 11.10+ */
-	background: -ms-linear-gradient(top,  #e6e456 0%,#d3d651 100%); /* IE10+ */
-	background: linear-gradient(top,  #e6e456 0%,#d3d651 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e456', endColorstr='#d3d651',GradientType=0 ); /* IE6-9 */
+	background: #568b8d; /* Old browsers */
+	background: -moz-linear-gradient(top,  #568b8d 0%, #4d7d7f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#568b8d), color-stop(100%,#4d7d7f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #568b8d 0%,#4d7d7f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #568b8d 0%,#4d7d7f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #568b8d 0%,#4d7d7f 100%); /* IE10+ */
+	background: linear-gradient(top,  #568b8d 0%,#4d7d7f 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#568b8d', endColorstr='#4d7d7f',GradientType=0 ); /* IE6-9 */
+
 	height:200px;
 	border-bottom: 1px solid #fff;
 	box-shadow: inset 0 -5px 15px rgba(5,5,5,0.08);
@@ -43,7 +45,7 @@ header #nav_wrap{
 }
 header #nav_wrap p{
 	font: lighter 1.6em 'Century Gothic', 'Helvetica Neue', Arial,  sans-serif;
-	color:#000;
+	color:#eee;
 	float: left;
 	margin-top: 76px;
 }
@@ -62,12 +64,12 @@ header #nav_wrap nav ul li{
 header #nav_wrap nav ul li a{
 	text-decoration:none;
 	font: lighter 1.375em 'Century Gothic', 'Helvetica Neue', Arial,  sans-serif;
-	color:#222;
+	color:#eee;
 }
 
 header #nav_wrap nav ul li a:hover{
-	color:#000;
-	border-bottom: 1px solid #000;
+	color:#fff;
+	border-bottom: 1px solid #fff;
 }
 
 /* List of posts*/
@@ -87,7 +89,6 @@ ul.posts_wrap {
 ul.posts_wrap li {
 	list-style: none;
 	margin-top: 30px;
-	font:  1em  'Helvetica Nueue', 'Verdana', Calibri, Arial,  sans-serif;
 }
 
 ul.posts_wrap li a{
@@ -118,7 +119,7 @@ ul.posts_wrap li a h2{
 
 /* Search bar styling */
 
-.search_wrap{
+.search_wrap, .search_wrap_large{
 	width: 30%;
 	float: right;
 	padding: 10px;
@@ -126,7 +127,7 @@ ul.posts_wrap li a h2{
 	background: #333;
 }
 
-.search_wrap form#search input{
+.search_wrap form#search input, .search_wrap_large form#search input{
 	height: 40px;
 	width: 100%;
 	padding: 8px 12px;
@@ -135,7 +136,14 @@ ul.posts_wrap li a h2{
 	font: lighter 1em 'Century Gothic', 'Helvetica Neue', Arial,  sans-serif;
 }
 
-/* Twitter feed styling */
+.search_wrap_large{
+	width: 100%;
+	float: none;
+}
+
+
+
+/* Twitter feed / topics styling */
 
 .feed_wrap{
 	max-width: 30%;
@@ -152,19 +160,30 @@ ul.posts_wrap li a h2{
 	color:#ddd;
 	margin-top: 20px;
 	margin-bottom: 5px;
-	font:  0.8em  'Helvetica Neue', 'Verdana', Calibri, Arial,  sans-serif;
+	font-size:  0.8em;
 	text-align: justified;
 }
 
 .feed_wrap em{
 	color:#aaa;
-	font: 0.78em'Helvetica Neue', 'Verdana', Calibri, Arial,  sans-serif;
+	font-size: 0.78em;
 	margin-left: 5px;
 }
 
 .feed_wrap h3{
 	color:#eee;
 	font: lighter 1.5em 'Century Gothic', 'Helvetica Neue', Arial,  sans-serif;
+}
+
+.feed_wrap p.topic{
+	font-size: 0.7em;
+	color:#aaa;
+}
+
+.feed_wrap a, .feed_wrap p.topic a{
+	color: #eee;
+	text-decoration: none;
+	font-size: 1.1em;
 }
 
 /* Footer */
@@ -195,7 +214,7 @@ footer#bottom ul{
 footer#bottom ul li{
 	float: right;
 	margin-left: 15px;
-	font: 0.8em'Helvetica Neue', 'Verdana', Calibri, Arial,  sans-serif;#
+	font-size: 0.8em;
 	
 }
 
@@ -214,13 +233,15 @@ footer#bottom ul li a:hover{
 
 footer#bottom small{
 	float: left;
-	font: lighter 0.8em 'Helvetica Neue', 'Verdana', Arial,  sans-serif;
+	font-size: 0.8em;
+	font-weight: lighter;
 	color: #aaa;
 }
 
 footer#bottom a#attribution{
 	float: right;
-	font: lighter 0.8em 'Helvetica Neue', 'Verdana', Arial,  sans-serif;
+	font-size: 0.8em;
+	font-weight: lighter;
 	color: #aaa;
 }
 
@@ -235,13 +256,17 @@ section.content{
 
 section.content a{
 	color: #555;
-	font: lighter 1em  'Helvetica Neue', 'Verdana', Arial,  sans-serif;
+	font: lighter 1em;
 	text-decoration: underline;
+}
+
+section.content .search_wrap{
+	margin-top: 0px;
 }
 
 section.content p{
 	color: #666;
-	font: lighter 1em  'Helvetica Neue', 'Verdana', Arial,  sans-serif;
+	font: lighter 1em;
 	line-height: 1.3em;
 	margin-bottom: 15px;
 }
@@ -259,7 +284,6 @@ section.content ul{
 section.content ul li{
 	margin-bottom: 15px;
 	list-style: none;
-	font:  1em  'Helvetica Nueue', 'Verdana', Calibri, Arial,  sans-serif;
 }
 
 section.content ul li a{
@@ -274,7 +298,7 @@ section.content ul li time{
 }
 
 section.footnote{
-	font:  0.8em  'Helvetica Nueue', 'Verdana', Calibri, Arial,  sans-serif;
+	font-size:  0.8em;
 	color:#666;
 	padding: 10px;
 }
@@ -348,13 +372,14 @@ section.comments button:active{
 
 section.comments a{
 	color: #555;
-	font: lighter 1em  'Helvetica Neue', 'Verdana', Arial,  sans-serif;
+	font: lighter 1em;
 	text-decoration: underline;
 }
 
 section.comments .content{
 	color: #444;
-	font: lighter 0.9em  'Helvetica Neue', 'Verdana', Arial,  sans-serif;
+	font-size: 0.9em;
+	font-weight: lighter;
 	line-height: 1.3em;
 	margin-top: 10px;
 }
@@ -373,7 +398,6 @@ section.comments ul{
 section.comments ul li{
 	margin-bottom: 15px;
 	list-style: none;
-	font:  1em  'Helvetica Nueue', 'Verdana', Calibri, Arial,  sans-serif;
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 	margin-bottom: 15px;
@@ -461,6 +485,10 @@ section.comments ul li time{
 		max-width: 100%;
 	}
 	
+	.search_wrap_large{
+		width: 95%;
+	}
+	
 	.search_wrap{
 		width: 95%;
 		max-width: 100%;
@@ -497,6 +525,11 @@ section.comments ul li time{
 	.page_wrap{
 		max-width: 380px;
 	}
+	
+	.search_wrap_large{
+		width: 95%;
+	}
+	
 	.feed_wrap{
 		float: left;
 		max-width: 100%;
@@ -555,6 +588,9 @@ section.comments ul li time{
 		width: 95%;
 		max-width: 100%;
 	}
+	.search_wrap_large{
+		width: 95%;
+	}
 	.footer_wrap{
 		max-width: 220px;
 	}
@@ -593,6 +629,9 @@ section.comments ul li time{
 	.feed_wrap{
 		float: left;
 		max-width: 100%;
+	}
+	.search_wrap_large{
+		width: 95%;
 	}
 	ul.posts_wrap {
 		max-width: 100%;

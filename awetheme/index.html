@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Awetheme</title>
+
+<!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+<!-- Stylesheets -->
+<link rel='stylesheet' type='text/css' href='style.css'>
+<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+
+<!-- jQuery -->
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<script>
+$(document).ready(function(){
+	$('footer img').hover(function(){
+		$(this).stop().animate({opacity: 1}, 300);
+	}, function(){
+		$(this).stop().animate({opacity: 0.5}, 300);
+	});
+});
+</script>
+</head>
+
+<body>
+<header>
+	<div class="wrapper">
+		<nav>
+			<ul>
+				<li class="active"><a href="index.html">Posts</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="404.html">Another page</a></li>
+			</ul>
+		</nav>
+		<h1 class="wobble"><a href="index.html">Awetheme</a></h1>
+	</div>
+</header>
+<section id="content">
+	<div id="intro">
+		<div class="wrapper">
+			<article>
+				<h2 class="postTitle">A short introduction to my blog</h2>
+				<p>This is treated as the content for the posts page. You can remotely modify this from your admin panel. Don't be shy, thank me!</p>
+			</article>
+		</div>
+	</div>
+	<div class="wrapper">
+		<form class="search" action="" method="post">
+			<input type="text" name="term" placeholder="Type and hit enter for searching through the posts..." value="">
+		</form>
+		<article class="compact">
+			<h2 class="postTitle"><a href="post.html">This is an Article Title<span>17th May, 2012</span></a></h2>
+		</article>
+		<article class="compact">
+			<h2 class="postTitle"><a href="post.html">This is Another Article Title<span>23rd Mar, 2012</span></a></h2>
+		</article>
+		<article class="compact">
+			<h2 class="postTitle"><a href="post.html">Just a Cool Article Title<span>15th Feb, 2012</span></a></h2>
+		</article>
+		<article class="compact">
+			<h2 class="postTitle"><a href="post.html">Cool Article Titles are Coming Soon<span>8th Jan, 2012</span></a></h2>
+		</article>
+		<article class="compact">
+			<h2 class="postTitle"><a href="post.html">This is Just Another Article Title<span>22nd Dec, 2011</span></a></h2>
+		</article>
+	</div>
+</section>
+<footer>
+	<div class="wrapper">
+		<a href="http://anchorcms.com"><img src="images/anchor_logo.png" alt="Anchor CMS"></a>
+		<p>Copyright &copy; 2012 Awetheme. All rights reserved.<br>Theme by <a href="http://incidiolabs.com">Cosmin Negoita</a></p>
+	</div>
+</footer>
+</body>
+</html>

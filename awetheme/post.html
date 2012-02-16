@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Awetheme</title>
+
+<!-- Stylesheets -->
+<link rel='stylesheet' type='text/css' href='style.css'>
+<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+
+<!-- jQuery -->
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+<script>
+$(document).ready(function(){
+	$('footer img').hover(function(){
+		$(this).stop().animate({opacity: 1}, 300);
+	}, function(){
+		$(this).stop().animate({opacity: 0.5}, 300);
+	});
+});
+</script>
+</head>
+
+<body>
+<header>
+	<div class="wrapper">
+		<nav>
+			<ul>
+				<li class="active"><a href="index.html">Posts</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="404.html">Another page</a></li>
+			</ul>
+		</nav>
+		<h1 class="wobble"><a href="index.html">Awetheme</a></h1>
+	</div>
+</header>
+<section id="content" class="single">
+	<div class="wrapper">
+		<form class="search addTop" action="" method="post">
+			<input type="text" name="term" placeholder="Type and hit enter for searching through the posts..." value="">
+		</form>
+		<article>
+			<h1 class="postTitle">This is an Article Title</h1>
+			<time>Posted on 17th May, 2012 &rarr; <a href="">Edit Article</a></time>
+			<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In posuere felis nec tortor. <a href="">Pellentesque</a> faucibus. Ut accumsan ultricies elit. Maecenas at justo id velit placerat molestie. Donec dictum lectus non odio. Cras a ante vitae enim iaculis aliquam.</p>
+			<p>Mauris nunc quam, venenatis nec, euismod sit amet, egestas placerat, est. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras id elit. Integer quis urna. Ut ante enim, dapibus malesuada, fringilla eu, condimentum quis, tellus.</p>
+			<h3>This is an H3</h3>
+			<img src="images/thumb.png" alt="Shit">
+			<p>Mauris vel lacus vitae felis vestibulum volutpat. Etiam est nunc, venenatis in, tristique eu, imperdiet ac, nisl. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In iaculis facilisis massa. Etiam eu urna. Sed porta.</p>
+			<ul>
+				<li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus.</li>
+				<li>Maecenas at justo id velit placerat molestie. Donec dictum lectus non odio.</li>
+				<li>Nam eget lacus. Aliquam erat volutpat. Quisque dignissim congue leo. In iaculis facilisis massa. Etiam eu urna. Sed porta.</li>
+				<li>Integer orci tellus, tristique vitae, consequat nec, porta vel, lectus.</li>
+			</ul>
+			<p>Nunc tempus felis vitae urna. Vivamus porttitor, neque at volutpat rutrum, purus nisi eleifend libero, a tempus libero lectus feugiat felis. Morbi diam mauris, viverra in, gravida eu, mattis in, ante. Morbi eget arcu. Morbi porta, libero id ullamcorper nonummy, nibh ligula pulvinar metus, eget consectetuer augue nisi quis lacus.</p>
+			<p id="footnote">This article is my 5th oldest. It is 589 words long. </p>
+		</article>
+		<section id="comments">
+			<a id="add" href="">Dive into the discussion!</a>
+			<h3>2 Comments</h3>
+			<ul>
+				<li class="comment">
+					<h3>Cosmin Negoita</h3>
+					<div>
+						<p>This is a little comment.</p>
+						<time>Added on 17th May, 2012</time>
+					</div>
+				</li>
+				<li class="comment">
+					<h3>Visual Idiot</h3>
+					<div>
+						<p>I'm intending to add a lot of paragraphs in this comment just to make it taller...</p>
+						<time>Added on 17th May, 2012</time>
+					</div>
+				</li>
+			</ul>
+			<form id="comment" action="" method="">
+				<div id="inputs">
+					<input type="text" id="name" placeholder="Your Full Name">
+					<input type="text" id="email" placeholder="Your Email Address">
+					<textarea id="text" placeholder="Your message right here..."></textarea>
+				</div>
+				<div id="submit"><button class="btn" type="submit">Post Comment</button></div>
+			</form>
+		</section>
+	</div>
+</section>
+<footer>
+	<div class="wrapper">
+		<a href="http://anchorcms.com"><img src="images/anchor_logo.png" alt="Anchor CMS"></a>
+		<p>Copyright &copy; 2012 Awetheme. All rights reserved.<br>Theme by <a href="http://incidiolabs.com">Cosmin Negoita</a></p>
+	</div>
+</footer>
+</body>
+</html>
