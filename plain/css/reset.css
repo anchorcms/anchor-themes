@@ -1,0 +1,17 @@
+/*
+ | reset.css v0.1 by @chrisveto
+ | this is not supposed to reset everything.
+*/
+
+html, body, h1, h2, h3, ul, ol, li, p{
+	margin:0px;
+	padding:0px;
+}
+
+ul, ol, li{
+	list-style-type:none;
+}
+
+header, footer, section, aside, time, abbr, img{
+	display:block;
+}
