@@ -6,14 +6,9 @@
 
 		<meta name="description" content="<?php echo site_description(); ?>">
 
-		<link rel="stylesheet" href="<?php echo theme_url('/css/reset.css'); ?>">
 		<link rel="stylesheet" href="<?php echo theme_url('/css/style.css'); ?>">
 		
 		<link rel="alternate" type="application/rss+xml" title="RSS" href="<?php echo rss_url(); ?>">
-
-		<script src="//code.jquery.com/jquery-latest.min.js"></script>
-		<script>var base = '<?php echo theme_url(); ?>';</script>
-		<script src="<?php echo theme_url('/js/main.js'); ?>"></script>
 		
 		<?php if(customised()): ?>
 		    <!-- Custom CSS -->
@@ -25,27 +20,24 @@
 	</head>
 	<body>
 	
-		<form id="search" action="<?php echo search_url(); ?>" method="post">
-			<input type="search" name="term" placeholder="To search, type and hit enter&hellip;" value="<?php echo search_term(); ?>">
-		</form>
-	
-		<header id="top">
-			<div class="wrap">
-				
-				<a id="logo" href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a>
-	
-				<?php if(has_menu_items()): ?>
-				<nav id="main" role="navigation">
-					<ul>
-						<?php while(menu_items()): ?>
-						<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
-							<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
-								<?php echo menu_name(); ?>
-							</a>
-						</li>
-						<?php endwhile; ?>
-					</ul>
-				</nav>
-				<?php endif; ?>
-			</div>
+		<header>
+			<p><a href="<?php echo base_url(); ?>"><?php echo site_name(); ?></a></p>
+
+			<?php if(has_menu_items()): ?>
+			<nav role="navigation">
+				<ul>
+					<?php while(menu_items()): ?>
+					<li <?php echo (menu_active() ? 'class="active"' : ''); ?>>
+						<a href="<?php echo menu_url(); ?>" title="<?php echo menu_title(); ?>">
+							<?php echo menu_name(); ?>
+						</a>
+					</li>
+					<?php endwhile; ?>
+				</ul>
+			</nav>
+			<?php endif; ?>
 		</header>
+
+		<form action="<?php echo search_url(); ?>" method="post">
+			<p><label>Search <input type="search" name="term" placeholder="To search, type and hit enter&hellip;" value="<?php echo search_term(); ?>"></label></p>
+		</form>

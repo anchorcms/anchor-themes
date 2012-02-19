@@ -1,5 +1,5 @@
 
-<section class="content">
+<section role="main">
     <h1>Oh no, this page can&rsquo;t be found.</h1>
 
     <p>Unfortunately, the page at <code><?php echo current_url(); ?></code> 

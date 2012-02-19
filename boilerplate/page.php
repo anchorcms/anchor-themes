@@ -1,7 +1,6 @@
 
-<section class="content">
-	<h1><?php echo article_title(); ?></h1>
+<section role="main">
+	<h1><?php echo page_title(); ?></h1>
 
-	<?php echo article_content(); ?>
+	<?php echo page_content(); ?>
 </section>
-
