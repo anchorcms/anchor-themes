@@ -7,7 +7,7 @@
 		</article>
 	</section>
 
-	<?php include_comments(); ?>
+	<?php include('includes/comment_form.php'); ?>
 
 
 	<section class="footnote">

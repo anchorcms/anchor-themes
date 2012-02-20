@@ -8,7 +8,7 @@
 	</article>
 </section>
 
-<?php include_comments(); ?>
+<?php include('includes/comment_form.php'); ?>
 
 <section class="footnote">
 	<p>This article is my <?php echo numeral(article_id()); ?> oldest. It is <?php echo count_words(article_html()); ?> words long. </p>

@@ -1,5 +1,0 @@
-Theme name:    Boilerplate
-Description:   DESCRIPTION OF YOUR AWESOME THEME
-Author name:   YOUR NAME
-Author site:   YOUR SITE
-License:       WTFPL (http://sam.zoy.org/wtfpl/COPYING)

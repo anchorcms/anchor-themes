@@ -11,6 +11,6 @@
 			<?php echo article_html(); ?>
 			<p id="footnote">This article is my <?php echo numeral(article_id()); ?> oldest. It is <?php echo count_words(article_html()); ?> words long.</p>
 		</article>
-		<?php include_comments(); ?>
+		<?php include('includes/comment_form.php'); ?>
 	</div>
 </section>
