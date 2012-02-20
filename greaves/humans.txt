@@ -1,0 +1,8 @@
+/* Greaves was built by Freelance web guy Russell Jones with layout based on the Foundation framework by ZURB */
+/* thefennec.co.uk */
+/* humanstxt.org */
+
+/* SITE */
+  Standards: HTML5, CSS3
+  Components: jQuery, Google Fonts
+  Software: Coda, Textmate

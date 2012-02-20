@@ -1,0 +1,5 @@
+Theme name:    Greaves
+Description:   A responsive theme for the super simple Anchor cms
+Author name:   Russell Jones
+Author site:   http://heyfennec.co.uk
+License:       CC BY-SA 3.0 (http://creativecommons.org/licenses/by-sa/3.0/)
