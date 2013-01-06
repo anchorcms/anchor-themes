@@ -1,3 +1,4 @@
+<?php theme_include('header'); ?>
 <section id="content">
 	<div id="intro">
 		<div class="wrapper">
@@ -25,3 +26,4 @@
 		<?php endif; ?>
 	</div>
 </section>
+<?php theme_include('footer'); ?>

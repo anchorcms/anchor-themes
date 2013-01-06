@@ -10,7 +10,7 @@ URL: incidiolabs.com
 body { background: #434343; color: #505050; font-family: Arial, sans-serif; }
 ul, ol { list-style: none; }
 
-.wrapper { width: 600px; margin: 0 auto; }
+.wrapper { width: 600px; max-width: 100%; margin: 0 auto; }
 
 /*=================================================
 Typography
@@ -147,7 +147,7 @@ article.compact { padding-bottom: 50px; }
 .single article { border-bottom: 1px solid #e1e1e1; padding-bottom: 50px; margin-bottom: 50px; }
 
 .search { background: #f2f2f2; padding: 5px; border-radius: 5px; margin-bottom: 50px; }
-.search input { background: #fff; color: #aaa; padding: 10px; border: 1px solid #e0e0e0; width: 568px; border-radius: 5px; }
+.search input { background: #fff; color: #aaa; padding: 10px; border: 1px solid #e0e0e0; width: 100%; box-sizing: border-box; border-radius: 5px; }
 .search input:focus, #name:focus, #email:focus, #text:focus { border-color: #c1c1c1; }
 
 #inputs { background: #f2f2f2; padding: 10px; border-radius: 5px 5px 0 0; }

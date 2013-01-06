@@ -6,7 +6,7 @@
 			<article>
 				<?php echo article_html(); ?>
 			</article>
-			
+
 			<section class="footnote">
 				<p>This article is my <?php echo numeral(article_id()); ?> oldest. It is <?php echo count_words(article_html()); ?> words long, and it’s got <?php echo total_comments() . pluralise(total_comments(), ' comment'); ?> for now. <?php echo article_custom_field('attribution'); ?></p>
 			</section>
@@ -21,11 +21,11 @@
 					<div class="wrap">
 						<h2><?php echo comment_name(); ?></h2>
 						<time><?php echo relative_time(comment_time()); ?></time>
-		
+
 						<div class="content">
 							<?php echo comment_text(); ?>
 						</div>
-						
+
 						<span class="counter"><?php echo $i; ?></span>
 					</div>
 				</li>

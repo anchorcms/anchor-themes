@@ -1,3 +1,4 @@
+<?php theme_include('header'); ?>
 <section id="content" class="single">
 	<div class="wrapper">
 		<form class="search" action="<?php echo search_url(); ?>" method="post">
@@ -12,3 +13,4 @@
 		</article>
 	</div>
 </section>
+<?php theme_include('footer'); ?>

@@ -1,3 +1,4 @@
+<?php theme_include('header'); ?>
 <section id="content">
 	<?php if(has_search_results()): ?>
 		<div id="intro">
@@ -30,3 +31,4 @@
 		</div>
 	<?php endif; ?>
 </section>
+<?php theme_include('footer'); ?>
