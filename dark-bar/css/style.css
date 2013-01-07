@@ -489,13 +489,8 @@ section.comments {
  			text-align: left;
  		}
 
- 	#tweet .follow{
- 		text-decoration: underline;
- 		color: #333;
- 	}
-
- 	#tweet .follow:hover{
- 		color: #111;
+ 	#tweet iframe {
+	 	margin-bottom: -6px;
  	}
 
 .article_desc{
