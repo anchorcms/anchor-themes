@@ -16,5 +16,4 @@
     <p>Looks like you have some writing to do!</p>
 <?php endif; ?>
 </div>
-<?php //echo my_last_tweet(); ?>
 <?php theme_include('footer'); ?>
