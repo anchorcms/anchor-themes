@@ -1,8 +1,9 @@
+<?php theme_include('header'); ?>
 <div id="content-bg">
 <section class="content">
-    
+
     <h1>You searched for &ldquo;<?php echo search_term(); ?>&rdquo;.</h1>
-    
+
     <?php if(has_search_results()): ?>
         <p>We found <?php echo total_search_results(); ?> <?php echo pluralise(total_search_results(), 'result'); ?> for &ldquo;<?php echo search_term(); ?>&rdquo;</p>
         <ul class="items wrap">
@@ -18,6 +19,7 @@
     <?php else: ?>
         <p>Unfortunately, there's no results for &ldquo;<?php echo search_term(); ?>&rdquo;. Did you spell everything correctly?</p>
     <?php endif; ?>
-    
+
 </section>
 </div>
+<?php theme_include('footer'); ?>
