@@ -1,8 +1,9 @@
+<?php theme_include('header'); ?>
 <div class="page_wrap">
 	<section class="content">
-		
+
 		<h1>You searched for &ldquo;<?php echo search_term(); ?>&rdquo;.</h1>
-		
+
 		<?php if(has_search_results()): ?>
 			<p>We found <?php echo total_search_results(); ?> <?php echo pluralise(total_search_results(), 'result'); ?> for &ldquo;<?php echo search_term(); ?>&rdquo;</p>
 			<ul class="posts_wrap">
@@ -35,9 +36,10 @@
 				</form>
 			</div>
 		<?php endif; ?>
-		
-		
-		
+
+
+
 	</section>
-	
+
 </div>
+<?php theme_include('footer'); ?>
