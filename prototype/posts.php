@@ -1,3 +1,4 @@
+<?php theme_include('header'); ?>
 <section id="content">
 	<div class="wrapper">
 		<section id="posts" class="col_2">
@@ -5,19 +6,19 @@
 				<?php $i=0; while(posts()) : ?>
 					<?php if($i===0) : ?>
 						<article>
-							<h2 class="noTop"><a href="<?php echo post_url(); ?>"><?php echo post_title(); ?></a></h2>
+							<h2 class="noTop"><a href="<?php echo article_url(); ?>"><?php echo article_title(); ?></a></h2>
 							<p class="meta">
-								Posted on <?php echo post_date(); ?>
+								Posted on <?php echo article_date(); ?>
 								<?php if(user_authed()): ?>
-									&rarr; <a href="<?php echo base_url('admin/posts/edit/' . post_id()); ?>">Edit</a>
+									&rarr; <a href="<?php echo base_url('admin/posts/edit/' . article_id()); ?>">Edit</a>
 								<?php endif; ?>
 							</p>
-							<?php echo post_description(); ?>
-							<a href="<?php echo post_url(); ?>" class="button">Continue reading &rarr;</a>
+							<?php echo article_description(); ?>
+							<a href="<?php echo article_url(); ?>" class="button">Continue reading &rarr;</a>
 						</article>
 					<?php else : ?>
 						<article class="compact">
-							<h2><a href="<?php echo post_url(); ?>"><span><?php echo post_date(); ?></span><?php echo post_title(); ?></a></h2>
+							<h2><a href="<?php echo article_url(); ?>"><span><?php echo article_date(); ?></span><?php echo article_title(); ?></a></h2>
 						</article>
 					<?php endif; ?>
 				<?php $i++; endwhile; ?>
@@ -31,3 +32,4 @@
 		<?php include('includes/sidebar.php'); ?>
 	</div>
 </section>
+<?php theme_include('footer'); ?>
