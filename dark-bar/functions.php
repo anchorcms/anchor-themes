@@ -11,7 +11,7 @@ function my_last_tweet(){
 	$json = file_get_contents("https://api.twitter.com/1/statuses/user_timeline.json?include_entities=true&include_rts=true&screen_name=". twitter_account() ."&count=1"); 
 	$decode = json_decode($json, true);
 	
-	return '<blockquote id="tweet"><div class="wrap"><a href="http://twitter.com/'.twitter_account().'"><img src="http://craigchilds.me/blog/themes/dark-bar/img/twitter_black.png"/></a>"' . $decode[0]['text'] . '" - <a href="https://twitter.com/'.twitter_account().'" class="follow" data-show-count="false" data-lang="en">Follow</a></div></blockquote><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>';
+	return '<blockquote id="tweet"><div class="wrap"><a href="http://twitter.com/'.twitter_account().'"><img src="themes/dark-bar/img/twitter_black.png"/></a>"' . $decode[0]['text'] . '" - <a href="https://twitter.com/'.twitter_account().'" class="follow" data-show-count="false" data-lang="en">Follow</a></div></blockquote><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>';
 }
 
 function numeral($number) {
