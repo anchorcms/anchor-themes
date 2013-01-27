@@ -1,3 +1,4 @@
+<?php theme_include('header'); ?>
 <div class="page_wrap">
 	<?php if(has_posts()): ?>
 		<ul class="posts_wrap">
@@ -14,14 +15,14 @@
 	<?php else: ?>
 		<p>Looks like you have some writing to do!</p>
 	<?php endif; ?>
-		
+
 		<div class="search_wrap">
 			<form id="search" action="<?php echo search_url(); ?>" method="post">
 				<input type="search" name="term" placeholder="To search, type and hit enter&hellip;" value="<?php echo search_term(); ?>">
 			</form>
 		</div>
 		<div class="feed_wrap"><h3>Twitter feed:</h3>
-		<?php 
+		<?php
 			if(function_exists('my_last_tweet')){
 				echo ''. my_last_tweet() .'';
 			}else{
@@ -30,3 +31,4 @@
 		?>
 		</div>
 </div>
+<?php theme_include('footer'); ?>

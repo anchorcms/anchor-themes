@@ -1,3 +1,4 @@
+<?php theme_include('header'); ?>
 <section id="content"<?php if(PLAIN_NO_SIDEBAR == true): echo 'class="no-sidebar"'; endif; ?>>
 
     <article id="article" class="article-<?php echo article_id(); ?>">
@@ -19,3 +20,4 @@
 	<?php include "includes/sidebar.php"; ?>
 </section>
 <?php endif; ?>
+<?php theme_include('footer'); ?>

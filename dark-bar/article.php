@@ -1,8 +1,9 @@
+<?php theme_include('header'); ?>
 <div id="content-bg">
 <section class="content">
 
     <h1><?php echo article_title(); ?></h1>
-	
+
 	<article>
 	    <?php echo article_html(); ?>
 	</article>
@@ -15,3 +16,4 @@
 </section>
 
 </div>
+<?php theme_include('footer'); ?>

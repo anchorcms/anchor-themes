@@ -1,3 +1,4 @@
+<?php theme_include('header'); ?>
 <section id="content">
 	<div class="wrapper">
 		<section id="posts" class="col_2">
@@ -9,3 +10,4 @@
 		<?php include('includes/sidebar.php'); ?>
 	</div>
 </section>
+<?php theme_include('footer'); ?>

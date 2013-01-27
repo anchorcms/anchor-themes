@@ -17,7 +17,7 @@
 </aside>
 <?php endif; ?>
 
-<?php if(PLAIN_NO_TWITTER == false): ?>
+<?php if(twitter_account()): ?>
 <aside id="sidebar-block" class="twitter">
 	<h3><a href="http://twitter.com/<?php echo twitter_account(); ?>" title="@<?php echo twitter_account(); ?> on Twitter">Twitter</a></h3>
 	<?php plain_twitter(); ?>
