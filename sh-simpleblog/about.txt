@@ -1,0 +1,4 @@
+Theme name:    Simple blog
+Description:   This is a simplistic, responsive Anchor theme
+Author name:   Sam Hellawell
+Author site:   http://samhellawell.info
