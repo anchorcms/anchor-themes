@@ -8,4 +8,6 @@ Please use them as a template, but make sure that you duplicate them and do not 
 
 If you unsure about how to do something, [check out the docs!](http://anchorcms.com/docs)
 
-Happy themeing!
+You can also view a range of themes at [Anchor Themes](http://anchorthemes.com)
+
+Happy theming!
