@@ -11,7 +11,7 @@
 
 						<li><a href="<?php echo admin_url(); ?>" title="Administer your site!">Admin area</a></li>
 
-						<li><a href="/" title="Return to my website.">Home</a></li>
+						<li><a href="<?php echo base_url(); ?>" title="Return to my website.">Home</a></li>
 					</ul>
 					<br>
 					<a id="attribution" title="Powered by Anchor CMS" href="//anchorcms.com">Powered by Anchor CMS</a>
