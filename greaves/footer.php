@@ -11,7 +11,7 @@
                         <li><a href="<?php echo twitter_url(); ?>">@<?php echo twitter_account(); ?></a></li>
                         <?php endif; ?>
                         
-                        <li><a href="<?php echo admin_url(); ?>" title="Administer your site!">Admin area</a></li>
+                        <li><a href="<?php echo base_url('admin'); ?>" title="Administer your site!">Admin area</a></li>
                        
                         <li><a href="/" title="Return to my website.">Home</a></li>
                     </ul>

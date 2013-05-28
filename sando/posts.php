@@ -4,7 +4,7 @@
         <?php while(posts()): ?>
     	<li>
         	<?php if(user_authed()): ?>
-        	    <div class="edit"><a href="<?php echo admin_url(); ?>/posts/edit/<?php echo article_id(); ?>">Edit</a></div>
+        	    <div class="edit"><a href="<?php echo base_url('admin'); ?>/posts/edit/<?php echo article_id(); ?>">Edit</a></div>
         	<?php endif; ?>
 
             <div class="date"><span><?php echo date('jS', article_time()); ?></span> <?php echo date('M', article_time()); ?></div>
