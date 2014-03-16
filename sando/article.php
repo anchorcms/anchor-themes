@@ -5,7 +5,7 @@
         Posted on <?php echo date('F jS, Y', article_time()); ?>
 
         <?php if(user_authed()): ?>
-            <span>&rarr;</span> <a href="<?php echo admin_url(); ?>/posts/edit/<?php echo article_id(); ?>">Edit</a>
+            <span>&rarr;</span> <a href="<?php echo base_url('admin'); ?>/posts/edit/<?php echo article_id(); ?>">Edit</a>
         <?php endif; ?>
     </p>
 
