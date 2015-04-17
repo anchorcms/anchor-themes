@@ -1,4 +1,4 @@
-# Anchor CMS Themes
+# [Anchor Themes](http://anchorthemes.com/)
 
 ## These themes have moved!
 
