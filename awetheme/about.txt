@@ -1,5 +1,0 @@
-Theme name:    Awetheme
-Description:   Simple & clean Anchor theme.
-Author name:   Cosmin Negoita
-Author site:   http://incidiolabs.com
-License:       WTFPL (http://sam.zoy.org/wtfpl/COPYING)

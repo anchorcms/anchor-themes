@@ -1,5 +1,0 @@
-Theme name:    Elcapor
-Description:   Theme created by Craig Childs
-Author name:   Craig Childs
-Author site:   http://craigchilds.me
-License:       WTFPL (http://sam.zoy.org/wtfpl/COPYING)

@@ -1,5 +1,0 @@
-Theme name:    Sando
-Description:   A subtly modern theme.
-Author name:   Cosmin Negoita
-Author site:   http://twitter.com/cosminnegoita
-License:       WTFPL (http://sam.zoy.org/wtfpl/COPYING)

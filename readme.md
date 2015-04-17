@@ -1,13 +1,14 @@
-## Anchor CMS Themes
+# Anchor CMS Themes
 
-This Repo is solely for the development of Themes for the Open-Source Blogging CMS: Anchor.
+## These themes have moved!
 
-This repo contains the default and boilerplate themes, this should provide you with enough aid to create your own themes.
+**All the themes that did exist in this repo have now moved to their own individual repos to improve management of them. Please see the links below:**
 
-Please use them as a template, but make sure that you duplicate them and do not overwrite them.
-
-If you unsure about how to do something, [check out the docs!](http://anchorcms.com/docs)
-
-You can also view a range of themes at [Anchor Themes](http://anchorthemes.com)
-
-Happy theming!
+- Awetheme by @CosminNegoita: https://github.com/daviddarnes/awetheme
+- Dark-bar by @CraigChilds94 & @idiot: https://github.com/daviddarnes/dark-bar
+- Elcapor by @CraigChilds94: https://github.com/daviddarnes/elcapor
+- Greaves by Russell Jones: https://github.com/daviddarnes/greaves
+- Plain by Chris Veto: https://github.com/daviddarnes/plain
+- Prototype by @CosminNegoita: https://github.com/daviddarnes/prototype
+- Sando by @CosminNegoita: https://github.com/daviddarnes/sando
+- Default by @idiot: https://github.com/anchorcms/anchor-cms/tree/master/themes/default
