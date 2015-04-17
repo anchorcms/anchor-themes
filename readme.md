@@ -5,8 +5,8 @@
 **All the themes that did exist in this repo have now moved to their own individual repos to improve management of them. Please see the links below:**
 
 - Awetheme: **https://github.com/daviddarnes/awetheme**
-- Dark-bar: **https://github.com/daviddarnes/dark-bar**
-- Elcapor: **https://github.com/daviddarnes/elcapor**
+- Dark-bar: **https://github.com/CraigChilds94/dark-bar**
+- Elcapor: **https://github.com/CraigChilds94/elcapor**
 - Greaves: **https://github.com/daviddarnes/greaves**
 - Plain: **https://github.com/daviddarnes/plain**
 - Prototype: **https://github.com/daviddarnes/prototype**
